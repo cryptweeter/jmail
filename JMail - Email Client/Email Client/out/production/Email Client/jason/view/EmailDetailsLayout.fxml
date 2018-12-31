@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="505.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="262.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" />
+      <WebView fx:id="webView" layoutX="13.0" layoutY="74.0" prefHeight="421.0" prefWidth="708.0" AnchorPane.bottomAnchor="9.399993896484375" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="74.0" />
+      <Label fx:id="subjectLabel" layoutX="14.0" layoutY="14.0" text="Subject:" />
+      <Label fx:id="senderLabel" layoutX="14.0" layoutY="38.0" text="Sender:" />
+      <ImageView fitHeight="51.0" fitWidth="128.0" layoutX="672.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://i.imgur.com/DjaVJwG.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

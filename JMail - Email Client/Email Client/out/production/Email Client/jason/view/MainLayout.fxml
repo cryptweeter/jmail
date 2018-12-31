@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTreeView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1156.0" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <JFXTreeView fx:id="emailFoldersTreeView" layoutX="9.0" layoutY="60.0" prefHeight="515.0" prefWidth="206.0" style="-fx-background-color: #3D4956;" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="9.0" AnchorPane.topAnchor="60.0" />
+        <TableView fx:id="emailTableView" layoutX="227.0" layoutY="60.0" prefHeight="215.0" prefWidth="752.0" style="-fx-background-color: #263238;" AnchorPane.leftAnchor="227.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="60.0">
+         <columns>
+            <TableColumn fx:id="senderCol" minWidth="0.0" prefWidth="286.0" text="Sender" />
+            <TableColumn fx:id="subjectCol" prefWidth="283.0" text="Subject" />
+            <TableColumn fx:id="dateCol" minWidth="0.0" prefWidth="185.0" text="Date" />
+            <TableColumn fx:id="sizeCol" minWidth="0.0" prefWidth="162.0" text="Size" />
+         </columns></TableView>
+        <WebView fx:id="messageRenderer" layoutX="226.0" layoutY="281.0" prefHeight="295.0" prefWidth="752.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="226.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="281.0" />
+      <JFXButton fx:id="composeBtn" layoutX="128.0" layoutY="15.0" onAction="#composeBtnAction" text="Compose" />
+      <JFXProgressBar fx:id="downAttachProgress" layoutX="967.0" layoutY="47.0" prefHeight="3.0" prefWidth="176.0" />
+      <JFXButton fx:id="downAttachBtn" layoutX="969.0" layoutY="13.0" onAction="#downAttachBtnAction" text="Download Attachments" />
+      <ImageView fitHeight="51.0" fitWidth="128.0" layoutX="9.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://i.imgur.com/DjaVJwG.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
